@@ -1,8 +1,9 @@
-let colorDiv1 = 'white';
-let colorDiv2 = 'white';
+let colorActual = 'white'; // Variable global.
 
 const div1 = document.getElementById('key');
 const div2 = document.getElementById('key2');
+
+div1.style.backgroundColor = colorActual;
 
 function cambiarColorDiv1(color) {
     div1.style.backgroundColor = color;
@@ -15,24 +16,20 @@ function cambiarColorDiv2(color) {
 
 document.addEventListener('keydown', function (event) {
     if (event.key === 'a') {
-        colorDiv1 = 'pink';
-        cambiarColorDiv1(colorDiv1);
+        colorActual = 'pink';
+        cambiarColorDiv1(colorActual);
     } else if (event.key === 's') {
-        colorDiv1 = 'darkorange';
-        cambiarColorDiv1(colorDiv1);
+        colorActual = 'darkorange';
+        cambiarColorDiv1(colorActual);
     } else if (event.key === 'd') {
-        colorDiv1 = 'lightblue';
-        cambiarColorDiv1(colorDiv1);
-    }
-    else if (event.key === 'q') {
-        colorDiv2 = 'purple';
-        cambiarColorDiv2(colorDiv2);
+        colorActual = 'lightblue';
+        cambiarColorDiv1(colorActual);
+    } else if (event.key === 'q') {
+        cambiarColorDiv2('purple');
     } else if (event.key === 'w') {
-        colorDiv2 = 'gray';
-        cambiarColorDiv2(colorDiv2);
+        cambiarColorDiv2('gray');
     } else if (event.key === 'e') {
-        colorDiv2 = 'saddlebrown';
-        cambiarColorDiv2(colorDiv2);
+        cambiarColorDiv2('saddlebrown');
     }
 });
 
