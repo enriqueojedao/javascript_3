@@ -10,7 +10,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #e2f7e1;
     font-family: Arial, sans-serif;
 }
 
@@ -34,7 +34,7 @@ h1 {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #007BFF;
+    background-color: #000000;
     text-decoration: none;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -44,35 +44,38 @@ h1 {
 }
 
 .button:hover {
-    background-color: #0056b3;
-    cursor: url('../img/Cuyicursor.png'), auto;
+    background-color: rgba(24, 255, 3, 0.75);
+    cursor: url('../img/Click_hover.png'), auto;
 }
 
 .footer {
-    background-color: #007BFF;
+    background-color: #000000;
     color: #fff;
     text-align: center;
     padding: 10px;
     position: absolute;
-    bottom: 0; 
-    width: 100%; 
+    bottom: 0;
+    width: 100%;
     font-size: 16px;
     box-sizing: border-box;
 }
-.repolink i{
+
+.repolink i {
     font-size: 24px;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     padding: 4px;
 }
-.repolink{
+
+.repolink {
     font-size: 10px;
-    text-decoration: none; 
+    text-decoration: none;
     color: white;
     align-items: center;
     text-align: center;
-    cursor: url('../img/Cuyicursor.png'), auto;
+    cursor: url('../img/Click_hover.png'), auto;
 }
-.repolink:hover, 
+
+.repolink:hover,
 .repolink:hover i {
-    color: black;
+    color: rgba(24, 255, 3, 0.55);
 }

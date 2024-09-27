@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e2f7e1;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.back-button {
+    display: block;
+    width: 80%;
+    max-width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: rgba(24, 255, 3, 0.75);
+    cursor: url('../img/Click_hover.png'), auto;
+}
+
+#ele1:hover {
+    background-color: #b3acac;
+    cursor: url('../img/Click_hover.png'), auto;
+}
